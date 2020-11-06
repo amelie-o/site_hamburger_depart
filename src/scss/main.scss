@@ -29,6 +29,7 @@
 @import "elements/images";
 @import "elements/links";
 @import "elements/wrapper";
+@import "elements/structure";
 
 
 
@@ -36,7 +37,8 @@
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 
-
+@import "compenents/section-intro";
+@import "compenents/section-message";
 
 
 // UTILITIES

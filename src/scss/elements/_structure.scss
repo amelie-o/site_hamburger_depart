@@ -1,0 +1,41 @@
+.main-grid{
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 70px 500px;
+}
+
+@media screen and (min-width: $vw-large){
+.main-grid{
+  grid-auto-flow: column;
+  grid-auto-columns: 500px 1fr 500px;
+
+  grid-auto-rows: minmax(250px, min-content);
+
+  .image img{
+    display: block;
+    object-fit: cover;
+  }
+
+ 
+}
+.row-menu{
+  grid-column: 1/ 4;
+}
+  .col-1-left{
+    grid-column: 1/2;
+  }
+
+  .col-1-right{
+    grid-column: 3/4;
+  }
+
+  .col-2-right{
+    grid-column: 2/ 4;
+  }
+
+  .col-2-left{
+    grid-column: 1/span 2;
+  }
+}
